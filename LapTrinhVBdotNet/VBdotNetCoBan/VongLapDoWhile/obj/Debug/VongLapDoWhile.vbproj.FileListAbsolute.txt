@@ -1,0 +1,11 @@
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\bin\Debug\VongLapDoWhile.exe.config
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\bin\Debug\VongLapDoWhile.exe
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\bin\Debug\VongLapDoWhile.pdb
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\bin\Debug\VongLapDoWhile.xml
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\obj\Debug\VongLapDoWhile.vbproj.SuggestedBindingRedirects.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\obj\Debug\VongLapDoWhile.Resources.resources
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\obj\Debug\VongLapDoWhile.vbproj.GenerateResource.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\obj\Debug\VongLapDoWhile.vbproj.CoreCompileInputs.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\obj\Debug\VongLapDoWhile.exe
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\obj\Debug\VongLapDoWhile.xml
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapDoWhile\obj\Debug\VongLapDoWhile.pdb

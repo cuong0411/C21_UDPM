@@ -1,0 +1,11 @@
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\bin\Debug\TinhTongVaHoanVi.exe.config
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\bin\Debug\TinhTongVaHoanVi.exe
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\bin\Debug\TinhTongVaHoanVi.pdb
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\bin\Debug\TinhTongVaHoanVi.xml
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\obj\Debug\TinhTongVaHoanVi.vbproj.SuggestedBindingRedirects.cache
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\obj\Debug\TinhTongVaHoanVi.Resources.resources
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\obj\Debug\TinhTongVaHoanVi.vbproj.GenerateResource.cache
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\obj\Debug\TinhTongVaHoanVi.vbproj.CoreCompileInputs.cache
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\obj\Debug\TinhTongVaHoanVi.exe
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\obj\Debug\TinhTongVaHoanVi.xml
+E:\LapTrinhVBdotNet\BaiTap_08-03\TinhTongVaHoanVi\obj\Debug\TinhTongVaHoanVi.pdb

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3bd7ab3c-ad07-4fb5-80f2-f5859a627931": {
+      "ProjectGuid": "3bd7ab3c-ad07-4fb5-80f2-f5859a627931",
+      "DisplayName": "BaiTapSo8",
+      "ColorIndex": 0
+    },
+    "4c5a1f1a-eb16-40f8-969e-08869bf67429": {
+      "ProjectGuid": "4c5a1f1a-eb16-40f8-969e-08869bf67429",
+      "DisplayName": "BaiTapSo9",
+      "ColorIndex": 1
+    },
+    "fc7f73eb-4028-41dd-ba43-2a09bb9367cd": {
+      "ProjectGuid": "fc7f73eb-4028-41dd-ba43-2a09bb9367cd",
+      "DisplayName": "LietKeSoNguyenToDemo",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

@@ -1,0 +1,12 @@
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\bin\Debug\SelectCase.exe.config
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\bin\Debug\SelectCase.exe
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\bin\Debug\SelectCase.pdb
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\bin\Debug\SelectCase.xml
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\obj\Debug\SelectCase.vbproj.AssemblyReference.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\obj\Debug\SelectCase.vbproj.SuggestedBindingRedirects.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\obj\Debug\SelectCase.Resources.resources
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\obj\Debug\SelectCase.vbproj.GenerateResource.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\obj\Debug\SelectCase.vbproj.CoreCompileInputs.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\obj\Debug\SelectCase.exe
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\obj\Debug\SelectCase.xml
+E:\LapTrinhVBdotNet\VBdotNetCoBan\SelectCase\obj\Debug\SelectCase.pdb

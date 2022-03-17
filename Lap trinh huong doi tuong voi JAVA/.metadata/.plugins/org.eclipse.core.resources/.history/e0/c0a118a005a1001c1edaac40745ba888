@@ -1,0 +1,21 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		PhanSo ps1 = new PhanSo();
+		PhanSo ps2 = new PhanSo();
+		
+		ps1.nhapPhanSo();
+		ps1.xuatPhanSo();
+		System.out.println("UCLN cua ps1 la: " + ps1.UCLN());
+		ps2 = ps1.rutGonPS();
+		ps1.xuatPhanSo();
+		ps2.xuatPhanSo();
+		
+		//ps2.nhapPhanSo();
+		//ps2.xuatPhanSo();
+
+	}
+
+}

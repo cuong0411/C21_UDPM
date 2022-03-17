@@ -1,0 +1,12 @@
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\bin\Debug\VongLapFor.exe.config
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\bin\Debug\VongLapFor.exe
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\bin\Debug\VongLapFor.pdb
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\bin\Debug\VongLapFor.xml
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\obj\Debug\VongLapFor.vbproj.AssemblyReference.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\obj\Debug\VongLapFor.vbproj.SuggestedBindingRedirects.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\obj\Debug\VongLapFor.Resources.resources
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\obj\Debug\VongLapFor.vbproj.GenerateResource.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\obj\Debug\VongLapFor.vbproj.CoreCompileInputs.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\obj\Debug\VongLapFor.exe
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\obj\Debug\VongLapFor.xml
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapFor\obj\Debug\VongLapFor.pdb

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class PhanSo {
+	
+	//cac thuoc tinh
+	private int tuSo;
+	private int mauSo;
+	
+	//cac phuong thuc
+	public void nhapPhanSo() {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Nhap tu so: ");
+		this.tuSo = input.nextInt();
+		System.out.print("Nhap mau so: ");
+		this.mauSo = input.nextInt();
+		input.close();
+	}
+	
+	//xuat phan so
+	public void xuatPhanSo() {
+		System.out.println("Phan so = " + tuSo + "/" + mauSo);
+	}
+
+}

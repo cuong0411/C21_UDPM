@@ -1,0 +1,11 @@
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\bin\Debug\BaiTapSo8.exe.config
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\bin\Debug\BaiTapSo8.exe
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\bin\Debug\BaiTapSo8.pdb
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\bin\Debug\BaiTapSo8.xml
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\obj\Debug\BaiTapSo8.vbproj.SuggestedBindingRedirects.cache
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\obj\Debug\BaiTapSo8.Resources.resources
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\obj\Debug\BaiTapSo8.vbproj.GenerateResource.cache
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\obj\Debug\BaiTapSo8.vbproj.CoreCompileInputs.cache
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\obj\Debug\BaiTapSo8.exe
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\obj\Debug\BaiTapSo8.xml
+E:\LapTrinhVBdotNet\BaiTap_08-03\BaiTapSo8\obj\Debug\BaiTapSo8.pdb

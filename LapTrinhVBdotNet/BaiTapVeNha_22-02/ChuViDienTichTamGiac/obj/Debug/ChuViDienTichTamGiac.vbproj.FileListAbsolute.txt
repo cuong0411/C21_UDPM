@@ -1,0 +1,11 @@
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\bin\Debug\ChuViDienTichTamGiac.exe.config
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\bin\Debug\ChuViDienTichTamGiac.exe
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\bin\Debug\ChuViDienTichTamGiac.pdb
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\bin\Debug\ChuViDienTichTamGiac.xml
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\obj\Debug\ChuViDienTichTamGiac.vbproj.SuggestedBindingRedirects.cache
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\obj\Debug\ChuViDienTichTamGiac.Resources.resources
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\obj\Debug\ChuViDienTichTamGiac.vbproj.GenerateResource.cache
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\obj\Debug\ChuViDienTichTamGiac.vbproj.CoreCompileInputs.cache
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\obj\Debug\ChuViDienTichTamGiac.exe
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\obj\Debug\ChuViDienTichTamGiac.xml
+E:\LapTrinhVBdotNet\BaiTapVeNha_22-02\ChuViDienTichTamGiac\obj\Debug\ChuViDienTichTamGiac.pdb

@@ -1,0 +1,11 @@
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\bin\Debug\VongLapForEach.exe.config
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\bin\Debug\VongLapForEach.exe
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\bin\Debug\VongLapForEach.pdb
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\bin\Debug\VongLapForEach.xml
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\obj\Debug\VongLapForEach.vbproj.SuggestedBindingRedirects.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\obj\Debug\VongLapForEach.Resources.resources
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\obj\Debug\VongLapForEach.vbproj.GenerateResource.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\obj\Debug\VongLapForEach.vbproj.CoreCompileInputs.cache
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\obj\Debug\VongLapForEach.exe
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\obj\Debug\VongLapForEach.xml
+E:\LapTrinhVBdotNet\VBdotNetCoBan\VongLapForEach\obj\Debug\VongLapForEach.pdb

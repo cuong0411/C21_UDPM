@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f17fbece-6b4a-461a-bb3f-ce77cca87a0d": {
+      "ProjectGuid": "f17fbece-6b4a-461a-bb3f-ce77cca87a0d",
+      "DisplayName": "PhuongTrinhBac1",
+      "ColorIndex": 0
+    },
+    "91aa738c-9735-4d59-98c8-285cea87a62f": {
+      "ProjectGuid": "91aa738c-9735-4d59-98c8-285cea87a62f",
+      "DisplayName": "PhuongTrinhBac2",
+      "ColorIndex": 1
+    },
+    "d75457ce-1742-4005-a24d-692e2829808c": {
+      "ProjectGuid": "d75457ce-1742-4005-a24d-692e2829808c",
+      "DisplayName": "ChuViDienTichTamGiac",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

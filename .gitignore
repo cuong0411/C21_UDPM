@@ -38,6 +38,7 @@
 *.app
 
 #JAVA.gitignore
+.metadata
 # Compiled class file
 *.class
 

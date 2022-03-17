@@ -1,0 +1,36 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		PhanSo ps1 = new PhanSo();
+		PhanSo ps2 = new PhanSo();
+		PhanSo kq = new PhanSo();
+		PhanSo ps3 = new PhanSo();
+		
+		ps1.nhapPhanSo();
+		ps3.nhanPS(ps2);
+		ps1.xuatPhanSo();
+		ps2 = ps1.rutGonPS();
+		ps2.xuatPhanSo();
+		
+		
+		kq = ps1.congPS(ps3);
+		kq.xuatPhanSo();
+		
+		kq = ps1.truPS(ps3);
+		kq.xuatPhanSo();
+		
+		kq = ps1.nhanPS(ps3);
+		kq.xuatPhanSo();
+		
+		kq = ps1.chiaPS(ps3);
+		kq.xuatPhanSo();
+		
+		//error
+		//ps2.nhapPhanSo();
+		//ps2.xuatPhanSo();
+
+	}
+
+}
