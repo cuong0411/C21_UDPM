@@ -41,6 +41,7 @@ long tinhThanhTienMangMH(MH mangMH[], int soLuongMH);
 long tinhSLMH(MH mangMH[], int soLuongMH);
 long tinhSLMH(MH mangMH[], int soLuongMH);
 int tinhMH_KhuyenMai(MH mangMH[], int soLuongMH);
+void tieuDe();
 
 int main()
 {
@@ -48,6 +49,7 @@ int main()
     int soLuongMH;
 
     nhapMangMH(dsMatHang, soLuongMH);
+    tieuDe();
     xuatMangMH(dsMatHang, soLuongMH);
 
     long tong = tinhThanhTienMangMH(dsMatHang, soLuongMH);
@@ -83,7 +85,7 @@ void nhap1MH(MH &mh)
 }
 void xuat1MH(MH mh)
 {
-    printf("\n|%-5s|%-15s|%-15s|%5d|%10d|%10d|%2d",
+    printf("\n|%-8s|%-15s|%-15s|%-10d|%-10d|%-10d|%-2d",
         mh.maHang, mh.tenHang, mh.ngayNhap, mh.soLuong, mh.donGia, mh.khuyenMai, mh.trangThai);
 }
 void nhapMangMH(MH mangMH[], int &soLuongMH)
@@ -104,6 +106,18 @@ void xuatMangMH(MH mangMH[], int soLuongMH)
     {
         xuat1MH(mangMH[i]);
     }
+}
+void tieuDe()
+{
+    char maHang[] = "Ma hang";
+    char tenHang[] = "Ten hang";
+    char ngayNhap[] = "Ngay nhap";
+    char soLuong[] = "So luong";
+    char donGia[] = "Don gia";
+    char khuyenMai[] = "Khuyen mai";
+    char trangThai[] = "Trang thai";
+    printf("\n|%-8s|%-15s|%-15s|%-10s|%-10s|%-10s|%-2s",
+            maHang, tenHang, ngayNhap, soLuong, donGia, khuyenMai, trangThai);
 }
 long tinhThanhTien1MH(MH mh)
 {
