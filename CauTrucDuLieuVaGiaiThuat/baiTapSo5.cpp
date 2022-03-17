@@ -34,22 +34,41 @@ typedef struct MatHang MH;
 
 void nhap1MH(MH &mh);
 void xuat1MH(MH mh);
+void nhapMangMH(MH mangMH[], int &soLuongMH);
+void xuatMangMH(MH mangMH[], int soLuongMH);
+long tinhThanhTien1MH(MH mh);
+long tinhThanhTienMangMH(MH mangMH[], int soLuongMH);
+long tinhSLMH(MH mangMH[], int soLuongMH);
+long tinhSLMH(MH mangMH[], int soLuongMH);
+int tinhMH_KhuyenMai(MH mangMH[], int soLuongMH);
 
 int main()
 {
-    MH mh1;
-    nhap1MH(mh1);
-    xuat1MH(mh1);
+    MH dsMatHang[MAX];
+    int soLuongMH;
+
+    nhapMangMH(dsMatHang, soLuongMH);
+    xuatMangMH(dsMatHang, soLuongMH);
+
+    long tong = tinhThanhTienMangMH(dsMatHang, soLuongMH);
+    printf("\nTong thanh tien tat ca cac mat hang la: %ld", tong);
+
+    long sl = tinhSLMH(dsMatHang, soLuongMH);
+    printf("\nTong so luong tat ca cac mat hang: %ld", sl);
+
+    int slKM = tinhMH_KhuyenMai(dsMatHang, soLuongMH);
+    printf("\nSo mat hang dang co khuyen mai la: %d", slKM);
 
     return 0;
 }
 void nhap1MH(MH &mh)
 {
+    fflush(stdin);
     printf("Nhap ma hang: ");
     gets(mh.maHang);
     printf("Nhap ten hang: ");
     gets(mh.tenHang);
-    printf("Nhap ngay nhap hang; ");
+    printf("Nhap ngay nhap hang: ");
     gets(mh.ngayNhap);
     printf("Nhap so luong: ");
     scanf("%d", &mh.soLuong);
@@ -66,4 +85,57 @@ void xuat1MH(MH mh)
 {
     printf("\n|%-5s|%-15s|%-15s|%5d|%10d|%10d|%2d",
         mh.maHang, mh.tenHang, mh.ngayNhap, mh.soLuong, mh.donGia, mh.khuyenMai, mh.trangThai);
+}
+void nhapMangMH(MH mangMH[], int &soLuongMH)
+{
+    do{
+        printf("Nhap so luong mat hang: ");
+        scanf("%d", &soLuongMH);
+        fflush(stdin);
+    } while (soLuongMH <= 0);
+    for (int i=0; i<soLuongMH; i++)
+    {
+        nhap1MH(mangMH[i]);
+    }
+}
+void xuatMangMH(MH mangMH[], int soLuongMH)
+{
+    for (int i=0; i<soLuongMH; i++)
+    {
+        xuat1MH(mangMH[i]);
+    }
+}
+long tinhThanhTien1MH(MH mh)
+{
+    return (long) mh.donGia * mh.soLuong - mh.khuyenMai;
+}
+long tinhThanhTienMangMH(MH mangMH[], int soLuongMH)
+{
+    long tong = 0;
+    for (int i=0; i<soLuongMH; i++)
+    {
+        tong += tinhThanhTien1MH(mangMH[i]);
+    }
+    return tong;
+}
+long tinhSLMH(MH mangMH[], int soLuongMH)
+{
+    long tong = 0;
+    for (int i=0; i<soLuongMH; i++)
+    {
+        tong += mangMH[i].soLuong;
+    }
+    return tong;
+}
+int tinhMH_KhuyenMai(MH mangMH[], int soLuongMH)
+{
+    int count = 0;
+    for (int i=0; i<soLuongMH; i++)
+    {
+        if (mangMH[i].trangThai == 1)
+        {
+            count++;
+        }
+    }
+    return count;
 }
