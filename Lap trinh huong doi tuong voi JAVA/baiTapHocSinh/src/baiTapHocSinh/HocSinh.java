@@ -34,9 +34,9 @@ public class HocSinh {
     	scanner.nextLine();
     }
     public void output() {
-        System.out.println("Ma so hoc sinh: " + this.maSo);
-        System.out.println("Ho ten hoc sinh: " + this.hoTen);
-        System.out.println("Diem trung binh hoc sinh: " + this.diemTrungBinh);
+        System.out.println(this.maSo + " | " +
+        		this.hoTen + " | " +
+        		this.diemTrungBinh);
     }
     public void rank() {
         if(this.diemTrungBinh >= 8.5)
@@ -65,6 +65,10 @@ public class HocSinh {
         return diemTrungBinh;
     }
     public void setDiemTrungBinh(double diemTrungBinh) {
-        this.diemTrungBinh = diemTrungBinh;
+    	if (diemTrungBinh < 0) {
+    		this.diemTrungBinh = 0.0d;
+    	} else {
+    		this.diemTrungBinh = diemTrungBinh;
+    	}
     }
 }
