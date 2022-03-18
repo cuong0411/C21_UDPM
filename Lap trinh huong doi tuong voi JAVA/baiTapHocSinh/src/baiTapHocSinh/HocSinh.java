@@ -1,11 +1,16 @@
 package baiTapHocSinh;
+import java.util.Scanner;
 
 public class HocSinh {
-    
+    private static Scanner scanner = new Scanner(System.in);
     private int maSo;
     private String hoTen;
     private double diemTrungBinh;
 
+    //constructor rong
+    public HocSinh() {
+    	
+    }
     //constructor
     public HocSinh(int maSo, String hoTen, double diemTrungBinh) {
         this.maSo = maSo;
@@ -19,7 +24,14 @@ public class HocSinh {
         this.diemTrungBinh = hs.diemTrungBinh;
     }
     public void input() {
-    	//?
+    	System.out.print("Nhap ma so hoc sinh: ");
+    	this.maSo = scanner.nextInt();
+    	scanner.nextLine();
+    	System.out.print("Nhap ho ten hoc sinh: ");
+    	this.hoTen = scanner.nextLine();
+    	System.out.print("Nhap diem trung binh cho hoc sinh: ");
+    	this.diemTrungBinh = scanner.nextDouble();
+    	scanner.nextLine();
     }
     public void output() {
         System.out.println("Ma so hoc sinh: " + this.maSo);

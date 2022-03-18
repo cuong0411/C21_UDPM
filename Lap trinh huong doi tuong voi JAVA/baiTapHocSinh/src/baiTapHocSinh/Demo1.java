@@ -1,6 +1,9 @@
 package baiTapHocSinh;
+import java.util.Scanner;
 
 public class Demo1 {
+    private static Scanner scanner = new Scanner(System.in);
+
 	public static void main(String[] args) {
 		
 		HocSinh hs1 = new HocSinh(1, "Ana Pham", 9.75);
@@ -20,6 +23,17 @@ public class Demo1 {
         } else {
             System.out.println(hs2.getHoTen() + " co diem trung binh lon hon");
         }
+        
+        //nhap thong tin hoc 1 hoc sinh
+        HocSinh hs3 = new HocSinh();
+        hs3.input();
+        hs3.output();
+        hs3.rank();
+        
+        //doi ten cua hoc sinh
+        System.out.print("Nhap ho ten moi cho hoc sinh: ");
+        hs3.setHoTen(scanner.nextLine());
+        hs3.output();
         
 	}
 
