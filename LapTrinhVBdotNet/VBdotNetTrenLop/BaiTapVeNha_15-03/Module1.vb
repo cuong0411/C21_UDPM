@@ -22,7 +22,7 @@ Module Module1
             Console.WriteLine("Trong mang khong co so nguyen to")
         End If
 
-        Dim soNT As Integer = TimSoNTDauTien(mang, soPhanTu)
+        Dim soNT As Integer = TimSoNTDauTienVer2(mang, soPhanTu)
         If soNT <> -1 Then
             Console.WriteLine("So nguyen to dau tien co trong mang la {0}", soNT)
         Else
@@ -128,5 +128,15 @@ Module Module1
         Else
             Return -1
         End If
+    End Function
+
+    Private Function TimSoNTDauTienVer2(ByVal mang() As Integer, ByVal soPhanTu As Integer) As Integer
+
+        For i As Integer = 1 To soPhanTu Step 1
+            If LaSoNguyenTo(mang(i)) = True Then
+                Return mang(i)
+            End If
+        Next
+        Return -1
     End Function
 End Module
