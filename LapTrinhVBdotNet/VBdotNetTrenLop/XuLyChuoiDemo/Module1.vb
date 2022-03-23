@@ -17,13 +17,13 @@
         Dim Ngay2 As String = Join(mangMgay, "/")
         Console.WriteLine(Ngay2)
 
-        Console.WriteLine("Vi tri chuoi 'VB.net' trong 'Lap trinh VB.Net' la {0}", InStr(chuoi1, "VB.Net", CompareMethod.Text))
+        Console.WriteLine("Vi tri chuoi 'VB.net' trong 'Lap trinh VB.Net' la {0}",
+                          InStr(chuoi1, "VB.Net", CompareMethod.Text))
 
         Dim chuoi2 As String = "VB.Net"
         Dim chuoi3 As String = "Java"
         chuoi1 = chuoi1.Replace(chuoi2, chuoi3)
         Console.WriteLine(chuoi1)
-
 
     End Sub
 
