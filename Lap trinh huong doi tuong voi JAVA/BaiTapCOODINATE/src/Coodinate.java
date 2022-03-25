@@ -34,10 +34,25 @@ public class Coodinate {
     }
     public Coodinate tinhTong(Coodinate toaDo) {
         Coodinate toaDoMoi = new Coodinate();
-        toaDoMoi.setHoanhDo(this.getHoanhDo() + toaDo.getHoanhDo());
-        toaDoMoi.setTungDo(this.getTungDo() + toaDo.getTungDo());
+        toaDoMoi.hoanhDo = this.hoanhDo + toaDo.hoanhDo;
+        toaDoMoi.tungDo = this.tungDo + toaDo.tungDo;
         return toaDoMoi;
     }
+    public Coodinate diemDoiXung() {
+    	Coodinate toaDoMoi = new Coodinate(-this.hoanhDo, -this.tungDo);
+    	return toaDoMoi;
+    }
+    public double tinhDoDai(Coodinate toaDo) {
+    	double doDai = Math.sqrt(Math.pow(this.hoanhDo - toaDo.hoanhDo, 2) + Math.pow(this.tungDo - toaDo.tungDo, 2));
+    	return doDai;
+    }
+    
+    
+    
+    
+    
+    
+    // demo
     public static Coodinate tinhTong(Coodinate toaDo1, Coodinate toaDo2) {
         Coodinate toaDo = new Coodinate();
         toaDo.setHoanhDo(toaDo1.getHoanhDo() + toaDo2.getHoanhDo());
