@@ -50,11 +50,11 @@
     'so sanh dien tich 2 hcn
     Public Sub SoSanhDT(ByVal dt2)
         If dienTich < dt2 Then
-            Console.WriteLine("DT HCN dau tien lon hon")
+            Console.WriteLine("DT HCN thu hai lon hon")
         ElseIf dienTich = dt2 Then
             Console.WriteLine("DT 2 HCN bang nhau")
         Else
-            Console.WriteLine("DT HCN thu hai lon hon")
+            Console.WriteLine("DT HCN dau tien lon hon")
         End If
     End Sub
 End Class

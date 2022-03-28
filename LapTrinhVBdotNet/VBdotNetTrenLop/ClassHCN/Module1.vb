@@ -17,6 +17,9 @@ Module Module1
         Dim hcn4 = New CHCN(10, 4)
         hcn4.XuatHCN()
 
+        Console.WriteLine("So sanh 2 hcn")
+        hcn1.SoSanhDT(hcn2.TinhDT())
+
     End Sub
 
 End Module
