@@ -21,7 +21,8 @@ Module Module1
         hcn1.SoSanhDT(hcn2.TinhDT())
 
         Console.WriteLine("So sanh 2 hcn ver2")
-        Console.WriteLine($"Hcn 1 lon hon hcn2: {hcn1.SoSanhDT2(hcn2.TinhDT())}")
+        Console.WriteLine($"hcn1 lon hon hcn2: {hcn1.SoSanhDT2(hcn2)}")
+        Console.WriteLine($"hcn1 lon hon hcn2: {hcn1.SoSanhDT2(hcn2, "day la thong bao")}")
 
     End Sub
 

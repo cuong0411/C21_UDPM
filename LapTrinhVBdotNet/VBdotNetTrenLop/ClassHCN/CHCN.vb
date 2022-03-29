@@ -61,10 +61,20 @@
             Console.WriteLine("DT HCN dau tien lon hon")
         End If
     End Sub
-    Public Function SoSanhDT2(ByVal dt2) As Boolean
-        If Me.TinhDT() < dt2 Then
+    Public Overloads Function SoSanhDT2(ByVal dt2 As CHCN, ByVal s As String) As Boolean
+        Console.WriteLine(s)
+        If Me.TinhDT() < dt2.TinhDT() Then
             Return True
-        ElseIf Me.TinhDT() = dt2 Then
+        ElseIf Me.TinhDT() = dt2.TinhDT() Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+    Public Overloads Function SoSanhDT2(ByVal dt2 As CHCN) As Boolean
+        If Me.TinhDT() < dt2.TinhDT() Then
+            Return True
+        ElseIf Me.TinhDT() = dt2.TinhDT() Then
             Return True
         Else
             Return False
