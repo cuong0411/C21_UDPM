@@ -17,6 +17,13 @@ Module Module1
         Dim hcn4 = New CHCN(10, 4)
         hcn4.XuatHCN()
 
+        Console.WriteLine("So sanh 2 hcn")
+        hcn1.SoSanhDT(hcn2.TinhDT())
+
+        Console.WriteLine("So sanh 2 hcn ver2")
+        Console.WriteLine($"hcn1 lon hon hcn2: {hcn1.SoSanhDT2(hcn2)}")
+        Console.WriteLine($"hcn1 lon hon hcn2: {hcn1.SoSanhDT2(hcn2, "day la thong bao")}")
+
     End Sub
 
 End Module

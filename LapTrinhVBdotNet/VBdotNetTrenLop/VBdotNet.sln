@@ -33,6 +33,10 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DemoHuongDoiTuong", "DemoHu
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ClassHCN", "ClassHCN\ClassHCN.vbproj", "{8F67057F-7493-4C28-BF29-7C8F2194CC5D}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Overloaded_Demo", "Overloaded_Demo\Overloaded_Demo.vbproj", "{E675429B-9B03-4D27-BEC5-B666F35F91D8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InheritanceDemo", "InheritanceDemo\InheritanceDemo.vbproj", "{99E545C8-4AA6-4AA3-832B-5DC98A93D332}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{8F67057F-7493-4C28-BF29-7C8F2194CC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F67057F-7493-4C28-BF29-7C8F2194CC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F67057F-7493-4C28-BF29-7C8F2194CC5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E675429B-9B03-4D27-BEC5-B666F35F91D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E675429B-9B03-4D27-BEC5-B666F35F91D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E675429B-9B03-4D27-BEC5-B666F35F91D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E675429B-9B03-4D27-BEC5-B666F35F91D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E545C8-4AA6-4AA3-832B-5DC98A93D332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E545C8-4AA6-4AA3-832B-5DC98A93D332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E545C8-4AA6-4AA3-832B-5DC98A93D332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E545C8-4AA6-4AA3-832B-5DC98A93D332}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
