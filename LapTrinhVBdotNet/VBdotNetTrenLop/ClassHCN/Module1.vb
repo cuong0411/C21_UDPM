@@ -20,6 +20,9 @@ Module Module1
         Console.WriteLine("So sanh 2 hcn")
         hcn1.SoSanhDT(hcn2.TinhDT())
 
+        Console.WriteLine("So sanh 2 hcn ver2")
+        Console.WriteLine($"Hcn 1 lon hon hcn2: {hcn1.SoSanhDT2(hcn2.TinhDT())}")
+
     End Sub
 
 End Module
