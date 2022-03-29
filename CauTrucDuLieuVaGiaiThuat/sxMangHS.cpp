@@ -30,9 +30,15 @@ int main()
     xuatLopHoc(lopHoc, soHocSinh);
     //printf("\nDiem trung binh cua ca lop = %.2f", tinhDTB(lopHoc, soHocSinh));
     //xuatHSTheoKV(lopHoc, soHocSinh);
-    printf("\nLop hoc sau khi duoc sap xep\n");
+    printf("\nLop hoc sau khi duoc sap xep theo diem trung binh\n");
     sxHS(lopHoc, soHocSinh);
+    xuatLopHoc(lopHoc, soHocSinh);
+
+    printf("\nLop hoc sau khi duoc sap xep theo ten\n");
     sxHoTen(lopHoc, soHocSinh);
+    xuatLopHoc(lopHoc, soHocSinh);
+
+    printf("\nLop hoc sau khi duoc sap xep theo so thich\n");
     sxSoThich(lopHoc, soHocSinh);
     xuatLopHoc(lopHoc, soHocSinh);
     
@@ -128,14 +134,13 @@ void sxHS(HS mang[], int n)
 }
 void sxHoTen(HS mang[], int n)
 {
-    int minIndex = 0;
+    //int minIndex = 0;
 	for (int i = 0; i < n - 1; i++)
 	{
 		int minIndex = i;
 		for (int j = i + 1; j < n; j++)
 		{
-			if (mang[minIndex].diemTrungBinh > mang[j].diemTrungBinh)
-            if (strcmp(mang[minIndex].hoTen, mang[j].hoTen))
+            if (strcmp(mang[minIndex].hoTen, mang[j].hoTen) > 0)
 			{
 				minIndex = j;
 			}
@@ -145,14 +150,13 @@ void sxHoTen(HS mang[], int n)
 }
 void sxSoThich(HS mang[], int n)
 {
-    int minIndex = 0;
+    //int minIndex = 0;
 	for (int i = 0; i < n - 1; i++)
 	{
 		int minIndex = i;
 		for (int j = i + 1; j < n; j++)
 		{
-			if (mang[minIndex].diemTrungBinh > mang[j].diemTrungBinh)
-            if (strcmp(mang[minIndex].soThich, mang[j].soThich))
+            if (strcmp(mang[minIndex].soThich, mang[j].soThich) > 0)
 			{
 				minIndex = j;
 			}
