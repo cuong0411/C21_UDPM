@@ -17,10 +17,10 @@ void nhapLopHoc(HS lopHoc[], int &soHocSinh);
 void xuatLopHoc(HS lopHoc[], int soHocSinh);
 float tinhDTB(HS lopHoc[], int soHocSinh);
 void xuatHSTheoKV(HS lopHoc[], int soHocSinh);
-void selectSort(int mang[], int n);
-void hoanVi(int &a, int &b);
 void sxHS(HS mang[], int n);
 void hoanViHS(HS &a, HS &b);
+void sxSoThich(HS mang[], int n);
+void sxHoTen(HS mang[], int n);
 
 int main()
 {
@@ -32,6 +32,8 @@ int main()
     //xuatHSTheoKV(lopHoc, soHocSinh);
     printf("\nLop hoc sau khi duoc sap xep\n");
     sxHS(lopHoc, soHocSinh);
+    sxHoTen(lopHoc, soHocSinh);
+    sxSoThich(lopHoc, soHocSinh);
     xuatLopHoc(lopHoc, soHocSinh);
     
 
@@ -101,30 +103,6 @@ void xuatHSTheoKV(HS lopHoc[], int soHocSinh)
     printf("\nSo hoc sinh o khu vuc 1 la %d", kv1);
     printf("\nSo hoc sinh o khu vuc 2 la %d", kv2);
 }
-void hoanVi(int &a, int &b)
-{
-	int temp;
-	temp = a;
-	a = b;
-	b = temp;
-}
-void selectSort(int mang[], int n)
-{
-	int minIndex = 0;
-	for (int i = 0; i < n - 1; i++)
-	{
-		int minIndex = i;
-		for (int j = i + 1; j < n; j++)
-		{
-			if (mang[minIndex] > mang[j])
-			{
-				minIndex = j;
-			}
-		}
-		hoanVi(mang[minIndex], mang[i]);
-		
-	}
-}
 void hoanViHS(HS &a, HS &b)
 {
 	HS temp;
@@ -145,7 +123,40 @@ void sxHS(HS mang[], int n)
 				minIndex = j;
 			}
 		}
-		hoanViHS(mang[minIndex], mang[i]);
-		
+		hoanViHS(mang[minIndex], mang[i]);	
+	}
+}
+void sxHoTen(HS mang[], int n)
+{
+    int minIndex = 0;
+	for (int i = 0; i < n - 1; i++)
+	{
+		int minIndex = i;
+		for (int j = i + 1; j < n; j++)
+		{
+			if (mang[minIndex].diemTrungBinh > mang[j].diemTrungBinh)
+            if (strcmp(mang[minIndex].hoTen, mang[j].hoTen))
+			{
+				minIndex = j;
+			}
+		}
+		hoanViHS(mang[minIndex], mang[i]);	
+	}
+}
+void sxSoThich(HS mang[], int n)
+{
+    int minIndex = 0;
+	for (int i = 0; i < n - 1; i++)
+	{
+		int minIndex = i;
+		for (int j = i + 1; j < n; j++)
+		{
+			if (mang[minIndex].diemTrungBinh > mang[j].diemTrungBinh)
+            if (strcmp(mang[minIndex].soThich, mang[j].soThich))
+			{
+				minIndex = j;
+			}
+		}
+		hoanViHS(mang[minIndex], mang[i]);	
 	}
 }
