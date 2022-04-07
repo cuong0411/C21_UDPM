@@ -62,7 +62,7 @@ public class NhanVien {
     // toString() method
     @Override
     public String toString() {
-        return "[Ma so: " + this.maSo + ", ho ten: " + this.hoTen + ", luong: " + this.tinhLuong();
+        return "[Ma so: " + this.maSo + ", ho ten: " + this.hoTen + ", luong: " + this.tinhLuong() + "]";
     }
 
     public void input() {
