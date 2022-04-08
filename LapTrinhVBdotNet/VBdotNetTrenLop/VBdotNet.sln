@@ -37,6 +37,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Overloaded_Demo", "Overload
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InheritanceDemo", "InheritanceDemo\InheritanceDemo.vbproj", "{99E545C8-4AA6-4AA3-832B-5DC98A93D332}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BaiKiemTraSo1", "BaiKiemTraSo1\BaiKiemTraSo1.vbproj", "{820785A9-3396-4FFE-84E7-5B7E9B23912C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{99E545C8-4AA6-4AA3-832B-5DC98A93D332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99E545C8-4AA6-4AA3-832B-5DC98A93D332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99E545C8-4AA6-4AA3-832B-5DC98A93D332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{820785A9-3396-4FFE-84E7-5B7E9B23912C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{820785A9-3396-4FFE-84E7-5B7E9B23912C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{820785A9-3396-4FFE-84E7-5B7E9B23912C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{820785A9-3396-4FFE-84E7-5B7E9B23912C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
