@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VongLapFor", "VongLapFor\VongLapFor.vbproj", "{D6A44D28-20A4-4C73-9BBB-4ED1FC09D126}"
-EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SelectCase", "SelectCase\SelectCase.vbproj", "{71F03C4C-11FC-419F-9A67-6DCEC4211860}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VongLapWhile", "VongLapWhile\VongLapWhile.vbproj", "{FAF41EF4-46B2-4125-854B-1F6A49D9756B}"
@@ -13,16 +11,14 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VongLapDoWhile", "VongLapDo
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VongLapForEach", "VongLapForEach\VongLapForEach.vbproj", "{FCA90F35-12D4-4D7E-8E34-5171BE25BB2D}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WindowsFormsDemo", "WindowsFormsDemo\WindowsFormsDemo.vbproj", "{42F6FE08-22E6-4098-B9E9-B0C5C1C230E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D6A44D28-20A4-4C73-9BBB-4ED1FC09D126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6A44D28-20A4-4C73-9BBB-4ED1FC09D126}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6A44D28-20A4-4C73-9BBB-4ED1FC09D126}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6A44D28-20A4-4C73-9BBB-4ED1FC09D126}.Release|Any CPU.Build.0 = Release|Any CPU
 		{71F03C4C-11FC-419F-9A67-6DCEC4211860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{71F03C4C-11FC-419F-9A67-6DCEC4211860}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71F03C4C-11FC-419F-9A67-6DCEC4211860}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{FCA90F35-12D4-4D7E-8E34-5171BE25BB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCA90F35-12D4-4D7E-8E34-5171BE25BB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCA90F35-12D4-4D7E-8E34-5171BE25BB2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F6FE08-22E6-4098-B9E9-B0C5C1C230E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F6FE08-22E6-4098-B9E9-B0C5C1C230E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F6FE08-22E6-4098-B9E9-B0C5C1C230E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F6FE08-22E6-4098-B9E9-B0C5C1C230E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

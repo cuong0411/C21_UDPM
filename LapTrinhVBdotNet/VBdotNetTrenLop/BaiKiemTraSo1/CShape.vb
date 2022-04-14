@@ -2,7 +2,7 @@
     Protected color As String
     Protected filled As Boolean
     Public Sub New()
-        color = "red"
+        color = "None"
         filled = False
     End Sub
     Public Sub New(ByVal color As String, ByVal filled As Boolean)

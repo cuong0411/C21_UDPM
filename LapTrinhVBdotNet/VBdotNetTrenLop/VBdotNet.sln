@@ -39,6 +39,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InheritanceDemo", "Inherita
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BaiKiemTraSo1", "BaiKiemTraSo1\BaiKiemTraSo1.vbproj", "{820785A9-3396-4FFE-84E7-5B7E9B23912C}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WindowsFormsDemo", "WindowsFormsDemo\WindowsFormsDemo.vbproj", "{0E16383F-DA72-47B5-8F79-8715E4947F5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{820785A9-3396-4FFE-84E7-5B7E9B23912C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{820785A9-3396-4FFE-84E7-5B7E9B23912C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{820785A9-3396-4FFE-84E7-5B7E9B23912C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E16383F-DA72-47B5-8F79-8715E4947F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E16383F-DA72-47B5-8F79-8715E4947F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E16383F-DA72-47B5-8F79-8715E4947F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E16383F-DA72-47B5-8F79-8715E4947F5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
