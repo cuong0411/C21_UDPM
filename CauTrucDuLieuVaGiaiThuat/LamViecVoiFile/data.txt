@@ -1,0 +1,3 @@
+5
+ket qua cua x la: 50
+test fputs
