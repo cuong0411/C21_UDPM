@@ -42,3 +42,11 @@ void outputArray(int a[], int n)
 		printf("%5d", a[i]);
 	}
 }
+void writeArrayToFile(int a[], int n, FILE *f)
+{
+	fprintf(f, "\n");
+	for (int i = 0; i < n; i++)
+	{
+		fprintf(f, "%5d", a[i]);
+	}
+}
