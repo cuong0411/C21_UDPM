@@ -1,0 +1,6 @@
+5
+S1   suacoduong         8500
+S2   suakhongduong      8000
+Ke1  Keodeo             25000
+Ba1  Banhquybo          50000
+Ba2  Banhbia            48000
