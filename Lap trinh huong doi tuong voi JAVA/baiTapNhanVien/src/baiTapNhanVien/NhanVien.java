@@ -1,8 +1,14 @@
 package baiTapNhanVien;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
+
+
 public class NhanVien extends Nguoi {
+	final static String DATE_FORMAT = "dd-MM-yyyy";
 
 	protected double luong;
 	protected String ngayNhanViec;
@@ -60,6 +66,17 @@ public class NhanVien extends Nguoi {
 	public String xuat() {
 		return super.xuat() + ", luong= " + this.luong + ", ngay nhan viec= " + this.ngayNhanViec + ". "
 				+ this.pbk.xuat();
+	}
+	public static boolean isDateValid(String date) 
+	{
+	        try {
+	            DateFormat df = new SimpleDateFormat(DATE_FORMAT);
+	            df.setLenient(false);
+	            df.parse(date);
+	            return true;
+	        } catch (ParseException e) {
+	            return false;
+	        }
 	}
 
 }
