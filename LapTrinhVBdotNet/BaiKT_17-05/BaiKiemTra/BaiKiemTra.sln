@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NguyenTuanCuong", "kt_17-05\NguyenTuanCuong.vbproj", "{3EFBAC7B-E48F-4FBA-B865-995C4F321606}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BaiTapVN2604", "..\..\VBdotNetTrenLop\BaiTapVN2604\BaiTapVN2604.vbproj", "{046FFD17-689B-428D-B7A2-81062244FD71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EFBAC7B-E48F-4FBA-B865-995C4F321606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFBAC7B-E48F-4FBA-B865-995C4F321606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EFBAC7B-E48F-4FBA-B865-995C4F321606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EFBAC7B-E48F-4FBA-B865-995C4F321606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046FFD17-689B-428D-B7A2-81062244FD71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046FFD17-689B-428D-B7A2-81062244FD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046FFD17-689B-428D-B7A2-81062244FD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046FFD17-689B-428D-B7A2-81062244FD71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {527C78A4-BDA9-49E6-A394-8BFD18F826C9}
+	EndGlobalSection
+EndGlobal
