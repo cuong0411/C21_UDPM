@@ -2,21 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-typedef struct SinhVien
+typedef struct SACH
 {
-	int mssv;
-	char hoTen[20];
-	char gioiTinh[20];
-	char diaChi[20];
-	float dtb;
+	
 }
-SV;
-
-typedef struct Node
+sach;
+typedef struct NODE
 {
-	SV sv;
-	struct Node *next;
+	sach data;
+	struct NODE *next;
 }
 node;
 typedef struct LIST
@@ -26,46 +20,64 @@ typedef struct LIST
 }
 list;
 
-void nhap1SV(SV &sv);
-void xuat1SV(SV sv);
-node *taoNode(SV sv);
-
-
+node *taoNode(sach s)
+{
+	
+}
+void taoList(list &l)
+{
+	l.head = NULL;
+	l.tail = NULL;
+}
+void themCuoi(list &l, sach s)
+{
+	
+}
+void nhap1Sach(sach s)
+{
+	
+}
+void xuat1Sach(sach s)
+{
+	
+}
+void nhapList(list &l)
+{
+	
+}
+void xuatList(list l)
+{
+	
+}
+void showMenu()
+{
+	
+}
 int main()
 {
-	SV sv;
-	nhap1SV(sv);
-	xuat1SV(sv);
+	list l;
+	int choice;
+	do
+	{
+		printf("Nhap lua chon cua ban: ");
+		scanf("%d", &choice);
+		showMenu();
+		switch (choice)
+		{
+			case 0:
+				break;
+			case 1:
+				//
+				break;
+			case 2:
+				//
+				break;
+			default:
+				//
+				break;
+		}
+		
+	} while (choice != 0);
 	
 	return 0;
-}
-void nhap1SV(SV &sv)
-{
-	printf("Nhap mssv: ");
-	scanf("%d", &sv.mssv);
-	fflush(stdin);
-	printf("Nhap ho ten: ");
-	gets(sv.hoTen);
-	printf("Nhap gioi tinh: ");
-	gets(sv.gioiTinh);
-	printf("Nhap dia chi: ");
-	gets(sv.diaChi);
-	printf("Nhap diem tb: ");
-	scanf("%f", &sv.diaChi);
-}
-void xuat1SV(SV sv)
-{
-	printf("%d | %s | %s | %s | %f", sv.mssv, sv.hoTen, sv.gioiTinh, sv.diaChi, sv.dtb);
-}
-node *taoNode(SV sv)
-{
-	node *n = (node *)malloc(sizeof(node));
-	if (n == NULL)
-	{
-		printf("khong cap phat duoc vung nho");
-		exit(0);
-	}
-	n->sv = sv;
-	n->next = NULL;
-	return n;
 }
