@@ -7,6 +7,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NguyenTuanCuong", "kt_17-05
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BaiTapVN2604", "..\..\VBdotNetTrenLop\BaiTapVN2604\BaiTapVN2604.vbproj", "{046FFD17-689B-428D-B7A2-81062244FD71}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "baiTapListView", "..\..\VBdotNetTrenLop\baiTapListView\baiTapListView.vbproj", "{170708FA-A432-4881-B9C6-524625C96A1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{046FFD17-689B-428D-B7A2-81062244FD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{046FFD17-689B-428D-B7A2-81062244FD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{046FFD17-689B-428D-B7A2-81062244FD71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{170708FA-A432-4881-B9C6-524625C96A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170708FA-A432-4881-B9C6-524625C96A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170708FA-A432-4881-B9C6-524625C96A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170708FA-A432-4881-B9C6-524625C96A1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
