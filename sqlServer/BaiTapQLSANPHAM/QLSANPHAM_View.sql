@@ -100,11 +100,17 @@ AS
     HAVING COUNT(MaSP) = (SELECT COUNT(MaSP) FROM SANPHAM)
 SELECT * FROM V10
 -- 11.Danh sách khách hàng có đặt tất cả các sản phẩm (Tên KH, DC).
-SELECT *
-FROM DONDH dh, CTDDH ct
-WHERE dh.SoDDH = ct.SoDDH
-
-CREATE VIEW V11
+SELECT * FROM SANPHAM
+SELECT * FROM DONDH
+-- KH1 mua toan bo SP
+INSERT INTO DONDH
+VALUES ('DH007', '15/03/2010', 'KH001')
+INSERT INTO CTDDH
+VALUES
+    ('DH007', 'SP02', 5),
+    ('DH007', 'SP04', 1),
+    ('DH007', 'SP05', 2)
+ALTER VIEW V11
 AS
     SELECT kh.MaKH, kh.TenKH, kh.DC, COUNT(DISTINCT ct.MaSP) AS [So luong SP]
     FROM DONDH dh, CTDDH ct, KHACHHANG kh
@@ -113,15 +119,14 @@ AS
     HAVING COUNT(DISTINCT ct.MaSP) = (SELECT COUNT(MaSP) FROM SANPHAM)
 SELECT * FROM V11
 -- 12.Danh sách các sản phẩm tất cả các khách hàng đều đặt (Tên SP, Mô tả).
-SELECT sp.MaSP, COUNT(dh.MaKH) AS [So Lan KH DAT], COUNT(DISTINCT dh.MaKH) AS [So KH]
+SELECT sp.MaSP, COUNT(dh.MaKH) AS [So Lan KH DAT], COUNT(DISTINCT dh.MaKH) AS [So KH khong trung]
 FROM DONDH dh, CTDDH ct, SANPHAM sp
 WHERE dh.SoDDH = ct.SoDDH AND ct.MaSP = sp.MaSP
 GROUP BY sp.MaSP
-
-SELECT COUNT(MaKH) AS [SL KH] FROM KHACHHANG
+HAVING COUNT(DISTINCT dh.MaKH) = (SELECT COUNT(MaKH) AS [SL KH] FROM KHACHHANG)
 -- 13.Danh sách khách hàng lâu nhất chưa đặt hàng (Tên KH, địa chỉ).
 
-SELECT *, (DATEDIFF(DAY, dh.NgayDat, GETDATE())) AS [Number of Days]
+SELECT TOP(1) WITH TIES *, (DATEDIFF(DAY, dh.NgayDat, GETDATE())) AS [Number of Days]
 FROM KHACHHANG kh, DONDH dh
 WHERE kh.MaKH = dh.MaKH
 ORDER BY (DATEDIFF(DAY, dh.NgayDat, GETDATE())) DESC
