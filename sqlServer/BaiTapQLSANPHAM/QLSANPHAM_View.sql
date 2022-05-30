@@ -4,30 +4,27 @@ SET DATEFORMAT dmy;
 GO
 -- TAO VIEW
 -- 1.Danh sách các loại sản phẩm có nhiều sản phẩm nhất (Tên loại SP, số sản phẩm).
-CREATE VIEW V01
+ALTER VIEW V01
 AS
-    SELECT lsp.MaLoai, COUNT(sp.MaSP) AS [So Luong SP]
+    SELECT TOP(1) WITH TIES lsp.MaLoai, COUNT(sp.MaSP) AS [So Luong SP]
     FROM LOAISP lsp, SANPHAM sp
     WHERE lsp.MaLoai = sp.MaLoai
     GROUP BY lsp.MaLoai
+    ORDER BY [So Luong SP] DESC
 SELECT * FROM dbo.V01
 -- 2.Danh sách khách hàng không đặt hàng trong tháng 3/2010 (Tên KH, địa chỉ).
-CREATE VIEW V02
+ALTER VIEW V02
 AS
-    SELECT TenKH, DC
-    FROM KHACHHANG
-    WHERE MaKH NOT IN (
-        SELECT kh.MaKH
-        FROM KHACHHANG kh
-        INNER JOIN DONDH dh
-        ON kh.MaKH = dh.MaKH
-        WHERE YEAR(NgayDat) = 2010 AND MONTH(NgayDat) = 3
-    )
+    SELECT TenKH, DC, NgayDat
+    FROM KHACHHANG kh, DONDH dh
+    WHERE kh.MaKH = dh.MaKH
+    AND NOT (YEAR(NgayDat) = 2010 AND MONTH(NgayDat) = 3)
+SELECT * FROM dbo.DONDH
 SELECT * FROM dbo.V02
 -- 3.DS khách hàng đặt nhiều đơn đặt hàng nhất trong tháng 3/2010 (Tên KH, địa chỉ).
-CREATE VIEW V03
+ALTER VIEW V03
 AS
-    SELECT TOP(1) TenKH, DC, COUNT(dh.SoDDH) AS [So Luong DDH]
+    SELECT TOP(1) WITH TIES TenKH, DC, COUNT(dh.SoDDH) AS [So Luong DDH]
     FROM KHACHHANG kh
     INNER JOIN DONDH dh
     ON kh.MaKH = dh.MaKH
@@ -77,8 +74,11 @@ AS
     HAVING SUM(l.SoLuong * nl.GIA) > 1000000
 SELECT * FROM V07
 SELECT * FROM SANPHAM
+SELECT * FROM LAM
 -- 8.DS các sản phẩm có lãi trên 20% (Tên SP, Giá thành SX, Giá bán, phần trăm lãi).
-SELECT sp.MaSP,sp.Gia AS [Gia Ban], SUM(l.SoLuong * nl.GIA) AS [Gia thanh NL], (sp.GIA - SUM(l.SoLuong * nl.GIA)) AS [Lai]
+SELECT sp.MaSP,sp.Gia AS [Gia Ban],
+    SUM(l.SoLuong * nl.GIA) AS [Gia thanh NL],
+    (sp.GIA - SUM(l.SoLuong * nl.GIA)) AS [Lai]
 FROM SANPHAM sp, LAM l, NGUYENLIEU nl
 WHERE sp.MaSP = l.MaSP AND l.MaNL = nl.MaNL
 GROUP BY sp.MaSP, sp.Gia
