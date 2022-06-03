@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct SACH
+typedef struct NSX
 {
-	char masach[4];
-    char tensach[15];
-    int namxuatban;
-    float trigia;
-} sach;
+	char ma[6];
+	char ten[20];
+	char loaisp;
+	float von;
+} nsx;
 typedef struct NODE
 {
-	sach data;
+	nsx data;
 	struct NODE *next;
 } node;
 typedef struct LIST
@@ -20,7 +20,7 @@ typedef struct LIST
 	node *tail;
 } list;
 
-node *taoNode(sach s)
+node *taoNode(nsx s)
 {
 	node *n = (node *)malloc(sizeof(node));
 	if (n == NULL)
@@ -38,7 +38,7 @@ void taoList(list &l)
 	l.head = NULL;
 	l.tail = NULL;
 }
-void themCuoi(list &l, sach s)
+void themCuoi(list &l, nsx s)
 {
 	node *n = taoNode(s);
 
@@ -53,21 +53,41 @@ void themCuoi(list &l, sach s)
 		l.tail = n;
 	}
 }
-void nhap1Sach(sach &s)
+void nhap1NSX(nsx &s)
 {
 	fflush(stdin);
-    printf("Nhap ma sach: ");
-    gets(s.masach);
-    printf("Nhap ten sach: ");
-    gets(s.tensach);
-    printf("Nhap nam xuat ban: ");
-    scanf("%d", &s.namxuatban);
-    printf("Nhap tri gia: ");
-    scanf("%f", &s.trigia);
+    printf("Nhap ma nsx: ");
+    gets(s.ma);
+    printf("Nhap ten: ");
+    gets(s.ten);
+    do
+    {
+    	fflush(stdin);
+    	printf("Nhap loai sp: b - banh, k - keo, s - sua: ");
+    	scanf("%c", &s.loaisp);
+	} while (s.loaisp != 'b' && s.loaisp != 'k' && s.loaisp != 'c');
+    printf("Nhap von: ");
+    scanf("%f", &s.von);
 }
-void xuat1Sach(sach s)
+void xuat1NSX(nsx s)
 {
-	printf("%-5s | %-15s | %-5d | %-5.2f", s.masach, s.tensach, s.namxuatban, s.trigia);
+	printf("%-6s | %-20s |", s.ma, s.ten);
+	char loaisp[6];
+	if (s.loaisp == 'b')
+	{
+		strcpy(loaisp, "banh");
+	}
+	else if (s.loaisp == 'k')
+	{
+		strcpy(loaisp, "keo");
+	}
+	else
+	{
+		strcpy(loaisp, "sua");
+	}
+	printf(" %-6s |", loaisp);
+	
+	printf(" %-5.2f", s.von);
 }
 void nhapList(list &l)
 {
@@ -81,8 +101,8 @@ void nhapList(list &l)
 
     for (int i = 0; i < soLuong; i++)
     {
-        sach s;
-        nhap1Sach(s);
+        nsx s;
+        nhap1NSX(s);
         themCuoi(l, s);
     }
 }
@@ -90,7 +110,7 @@ void xuatList(list l)
 {
 	for (node *n = l.head; n != NULL; n = n->next)
     {
-        xuat1Sach(n->data);
+        xuat1NSX(n->data);
         printf("\n");
     }
 }
@@ -98,8 +118,8 @@ void showMenu()
 {
 	printf("\t ============MENU================================\n");
 	printf("\t |0. Thoat                                      |\n");
-	printf("\t |1. nhap danh sach cuon sach                   |\n");
-	printf("\t |2. xuat danh sach cuon sanh                   |\n");
+	printf("\t |1. nhap danh sach NSX                   |\n");
+	printf("\t |2. xuat danh sach NSX                   |\n");
 	printf("\t ================================================\n");
 }
 int main()
