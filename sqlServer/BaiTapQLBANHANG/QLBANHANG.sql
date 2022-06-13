@@ -80,13 +80,14 @@ VALUES
 	('KH06', N'Trần Hoàng', N'Tân Bình', '0938457897', NULL)
 INSERT INTO VATTU
 VALUES
-	('VT01', N'Xi măng', N'Bao', 50000, 5000),
-	('VT02', N'Cát', N'Khối', 45000, 50000),
-	('VT03', N'Gạch ống', N'Viên', 120, 800000),
-	('VT04', N'Gạch thẻ', N'Viên', 110, 800000),
-	('VT05', N'Đá lớn', N'Khối', 25000, 100000),
-	('VT06', N'Đá nhỏ', N'Khối', 33000, 100000),
-	('VT07', N'Lam gió', N'Cái', 15000, 50000)
+	--('VT01', N'Xi măng', N'Bao', 50000, 5000),
+	('VT02', N'Cát', N'Khối', 45000, 50000)
+INSERT INTO VATTU VALUES	('VT03', N'Gạch ống', N'Viên', 120, 800000)
+INSERT INTO VATTU VALUES	('VT04', N'Gạch thẻ', N'Viên', 110, 800000)
+INSERT INTO VATTU VALUES	('VT05', N'Đá lớn', N'Khối', 25000, 100000)
+INSERT INTO VATTU VALUES	('VT06', N'Đá nhỏ', N'Khối', 33000, 100000)
+INSERT INTO VATTU VALUES	('VT07', N'Lam gió', N'Cái', 15000, 50000)
+
 INSERT INTO HOADON
 VALUES
 	('HD001', '12/05/2010', 'KH01', NULL),
